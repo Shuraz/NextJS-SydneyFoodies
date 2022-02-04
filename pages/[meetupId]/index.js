@@ -29,7 +29,11 @@ export async function getStaticPaths() {
         const meetups= await meetupCollection.find({},{_id:1}).toArray();
         client.close();
     return{ 
-        fallback:false,
+        //fallback:false,
+        //fallback:false only pre-generated page will show up.
+        fallback:'blocking',
+        //fallback:'blocking will render the new page and show once it is ready.
+        //fallback:true will instantly show the page, but have to be handled while it is generating.
 
         // paths:[
         //     {

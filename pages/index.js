@@ -35,7 +35,7 @@ function HomePage(props) {
       <title>React Meetups</title>
       <meta name="description" content="Find you important meetups and todo lists."/>
     </Head>
-    <MeetupList meetups={props.meetups} />;
+    <MeetupList meetups={props.meetups} />
   </Fragment>
   );
 }
@@ -69,7 +69,7 @@ export async function getStaticProps() {
         id: meetups._id.toString(),
       })),
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 
