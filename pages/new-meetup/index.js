@@ -19,7 +19,6 @@ function NewMeetupPage() {
   }
   return (
   <NewMeetupFrom onAddMeetup={addMeetupHandle}/>
-
   )
 }
 

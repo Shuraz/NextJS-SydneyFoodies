@@ -52,7 +52,7 @@ function NewMeetupForm(props) {
           ></textarea>
         </div>
         <div className={classes.actions}>
-          <button>Add Place</button>
+          <button>Add Resturant</button>
         </div>
       </form>
     </Card>
